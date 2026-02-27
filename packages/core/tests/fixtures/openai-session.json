@@ -1,0 +1,11 @@
+[
+  { "role": "system", "content": "You are a helpful assistant." },
+  { "role": "user", "content": "Search for the latest news about AI" },
+  { "role": "assistant", "content": "I'll search for that.", "tool_calls": [{ "id": "call_abc123", "type": "function", "function": { "name": "web_search", "arguments": "{\"query\":\"latest AI news 2026\"}" } }] },
+  { "role": "tool", "tool_call_id": "call_abc123", "content": "AI continues to advance rapidly in 2026..." },
+  { "role": "assistant", "content": "Here's what I found about the latest AI news." },
+  { "role": "user", "content": "Now read the file config.json" },
+  { "role": "assistant", "content": null, "tool_calls": [{ "id": "call_def456", "type": "function", "function": { "name": "read_file", "arguments": "{\"path\":\"config.json\"}" } }] },
+  { "role": "tool", "tool_call_id": "call_def456", "content": "{ \"key\": \"value\" }" },
+  { "role": "assistant", "content": "The config file contains a key-value pair." }
+]

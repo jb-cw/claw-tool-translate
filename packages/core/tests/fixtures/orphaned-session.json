@@ -1,0 +1,7 @@
+[
+  { "role": "user", "content": "Search for something" },
+  { "role": "assistant", "content": [{ "type": "tool_use", "id": "toolu_orphan1", "name": "web_search", "input": { "query": "test" } }] },
+  { "role": "user", "content": "Actually, never mind. Just tell me a joke." },
+  { "role": "assistant", "content": [{ "type": "text", "text": "Sure! Why did the developer quit? Because they didn't get arrays." }, { "type": "tool_use", "id": "toolu_orphan2", "name": "read_file", "input": { "path": "joke.txt" } }] },
+  { "role": "user", "content": [{ "type": "tool_result", "tool_use_id": "toolu_missing_call", "content": "This result has no matching call" }] }
+]

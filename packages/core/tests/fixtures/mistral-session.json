@@ -1,0 +1,8 @@
+[
+  { "role": "user", "content": "Search for Mistral AI models" },
+  { "role": "assistant", "content": "Let me search.", "tool_calls": [{ "id": "abc123XYZ", "type": "function", "function": { "name": "web_search", "arguments": "{\"query\":\"Mistral AI models 2026\"}" } }] },
+  { "role": "tool", "tool_call_id": "abc123XYZ", "content": "Mistral released several new models in 2026..." },
+  { "role": "assistant", "content": null, "tool_calls": [{ "id": "this_id_has_underscores_and_is_too_long", "type": "function", "function": { "name": "read_file", "arguments": "{\"path\":\"models.json\"}" } }] },
+  { "role": "tool", "tool_call_id": "this_id_has_underscores_and_is_too_long", "content": "{ \"models\": [\"mistral-large\", \"mistral-medium\"] }" },
+  { "role": "assistant", "content": "Found the models list." }
+]

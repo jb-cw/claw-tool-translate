@@ -1,0 +1,10 @@
+{
+  "name": "claw-tool-translate-monorepo",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "npm -w packages/core run build",
+    "test": "npm -w packages/core run test",
+    "test:watch": "npm -w packages/core run test:watch"
+  }
+}

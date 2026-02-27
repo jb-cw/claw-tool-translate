@@ -1,0 +1,17 @@
+{
+  "name": "claw-tool-translate",
+  "version": "0.1.0",
+  "description": "Session-aware tool call format translation across LLM providers (Anthropic, OpenAI, xAI/Grok, Google/Gemini, Mistral)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "import": "./dist/index.js", "types": "./dist/index.d.ts" } },
+  "files": ["dist"],
+  "scripts": { "build": "tsup", "test": "vitest run", "test:watch": "vitest" },
+  "keywords": ["llm","tool-calling","function-calling","anthropic","openai","grok","xai","gemini","google","mistral","multi-provider","session","format-translation","tool_use","tool_result","provider-agnostic","ai-agent","model-switching","openclaw"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/jb-cw/claw-tool-translate" },
+  "homepage": "https://github.com/jb-cw/claw-tool-translate",
+  "bugs": { "url": "https://github.com/jb-cw/claw-tool-translate/issues" },
+  "devDependencies": { "tsup": "^8.0.0", "typescript": "^5.4.0", "vitest": "^2.0.0" }
+}

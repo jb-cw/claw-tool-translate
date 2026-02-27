@@ -1,0 +1,10 @@
+[
+  { "role": "user", "content": "Search for the latest news about AI" },
+  { "role": "assistant", "content": [{ "type": "text", "text": "I'll search for that." }, { "type": "tool_use", "id": "toolu_01abc", "name": "web_search", "input": { "query": "latest AI news 2026" } }] },
+  { "role": "user", "content": [{ "type": "tool_result", "tool_use_id": "toolu_01abc", "content": "AI continues to advance rapidly in 2026..." }] },
+  { "role": "assistant", "content": [{ "type": "text", "text": "Here's what I found about the latest AI news." }] },
+  { "role": "user", "content": "Now read the file config.json" },
+  { "role": "assistant", "content": [{ "type": "tool_use", "id": "toolu_02def", "name": "read_file", "input": { "path": "config.json" } }] },
+  { "role": "user", "content": [{ "type": "tool_result", "tool_use_id": "toolu_02def", "content": "{ \"key\": \"value\" }" }] },
+  { "role": "assistant", "content": [{ "type": "text", "text": "The config file contains a key-value pair." }] }
+]
